@@ -20,6 +20,10 @@ API_KEY=3333REPLACE-WITH-YOUR-API-KEY333
 SUBDOMAIN=planetargon
 ```
 
+Note:  You can find your API KEY at:
+
+* https://planetargon.workable.com/backend/settings/integrations
+
 2. Install Ruby version
 
 ```bash
