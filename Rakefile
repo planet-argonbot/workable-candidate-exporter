@@ -43,10 +43,10 @@ namespace :planetargon do
           next if job['title'] =~ /intern/i
 
           # Fetch all candidates for this particular job ad
-          candidates = client.job_candidates(job['shortcode'])
+          candidates = client.job_candidates(job['shortcode'], limit: 1000)
 
           candidates.each do |candidate|
-            # Skip any candidates that we ruled out
+            # Skip any candidates that we previously ruled out
             next if candidate['disqualified'] == true
 
             # Skip if we hired them
