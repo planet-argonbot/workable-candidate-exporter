@@ -26,6 +26,7 @@ namespace :planetargon do
                     candidate_email_address
                     applied_on
                     applied_on_friendly
+                    address
                     profile_url
                     job_url )
 
@@ -57,6 +58,7 @@ namespace :planetargon do
                               candidate['email'],
                               candidate['created_at'],
                                Date.parse(candidate['created_at']).strftime('%B of %Y'),
+                              candidate['address'],
                               candidate['profile_url'],
                               job['url'] ]
 
